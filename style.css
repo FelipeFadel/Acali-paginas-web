@@ -4,40 +4,283 @@
   box-sizing: border-box;
 }
 
-header {
-  height: 100px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
-section {
-  height: 100%;
+body::-webkit-scrollbar {
+  width: 12px;              
+}
+
+body::-webkit-scrollbar-track {
+  background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #d3d3d3;  
+  border-radius: 5px;
+}
+
+.centralizar{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.linhas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.justificar{
+  display: flex;
+  justify-content: space-between;
+}
+
+.esquerda{
+  display: flex;
+  justify-content: start;
+}
+
+.texto-branco{
+  color: #F7F7F7;
+  font-weight: 600;
+  font-size: 0.9em;
+  padding-left: 10px;
+}
+
+header {
+  align-self: center;
+  justify-self: center;
+  height: 100px;
+  width: 90%;
+  gap: 30px;
+}
+
+section img {
+  width: 100px;
+  height: 84px;
+}
+
+section p {
+  font-size: 1.2em;
+  font-weight: 600;
+  padding-right: 10px;
+  line-height: 100%;
 }
 
 .logo-esq {
-  background-color: aquamarine;
   width: 100px;
-  margin-right: 5%;
+  height: 100px;
 }
 
 .bar-dir {
   display: flex;
   align-items: center;
-  border-radius: 20px;
+  border-radius: 18px;
   background-color: #f0f0f0;
-  width: 70%;
+  width: auto;
+  padding: 0px 70px;
   height: 50px;
 }
 
 ul {
   list-style: none;
   display: flex;
-  gap: 10px;
 }
 
-a {
+ul li {
+  padding: 16px 18px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+li:hover {
+  background-color: #e0e0e0;
+}
+
+ul a {
   text-decoration: none;
   color: black;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.fundo-conteudo {
+  margin-top: 75px;
+  position: relative;
+  margin-right: 50px;
+  width: 700px;
+  height: auto;
+}
+
+section .pasta{
+  width: 100%;
+  height: 100%;
+  display: flex; 
+}
+
+.voltar{
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  width: 165px;
+  height: 70%;
+  gap: 5px;
+  border-radius: 75px;
+}
+
+.voltar:hover{
+  background-color: #bcbcbc;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.voltar-seta{
+  width: 20px; 
+  height: auto;
+  margin-left: 15px;
+  margin-top: 3px;
+}
+
+.progress-bar{
+  position: absolute;
+  top: 25%;
+  left: 65%;
+  width: 40%;
+  height: 50%;
+  border-radius: 20px;
+  background-color: #D9D9D9;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.progress-bar-fill{
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-end-start-radius: 20px;
+  background-color: #13AE85;
+}
+
+.projetos{
+  margin-top: -2px;
+  width: 750px;
+  height: 700px;
+  border-radius: 0px 20px 20px 20px;
+  background-color: #D9D9D9;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+}
+ 
+h1{
+  margin-top: 35px;
+  font-weight: 600;
+  text-align: left;
+  font-size: 1.4em;
+}
+
+h2{
+  margin-bottom: 2px;
+  font-weight: 600;
+  text-align: left;
+  font-size: 1.2em;
+  align-self: center;
+}
+
+.subtitulo-projetos{
+  height: 5%;
+  width: 90%;
+  justify-self: center;
+  margin-bottom: 1em;
+}
+
+.bolas{
+  margin: 0px 10px;
+  gap: 5px;
+}
+
+.bola{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: thin solid rgb(159, 159, 159);
+  background-color: #E6E6E6;
+}
+
+article{
+  width: auto;
+  height: 100%;
+}
+
+.text-box{
+  width: 90%;
+  justify-self: center;
+  height: auto;
+}
+
+.progress-bar-projeto{
+  width: 150px;
+  height: 70%;
+  border-radius: 20px;
+  background-color: #E9E8E8;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.texto-esquerda{
+  padding-top: 1em;
+  text-align: left;
+  font-size: 1em;
+  font-weight: 400;
+  color: #8C8C8C;
+}
+
+.documento{
+  width: 60px;
+  height: auto;
+}
+
+.arquivo{
+  width: 220px;
+  height: 220px;
+  margin: 45px 10px 10px 10px;
+  border: rgb(124, 124, 124) solid 1px;
+  border-radius: 20px;
+  align-content: center;
+}
+
+.arquivo:hover{
+  background-color: #bcbcbc;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.arquivo h2{
+    font-family: "Aboreto", system-ui;
+    font-weight: 400;
+    margin: 15px;
+    font-size: 1em;
+}
+
+.arquivo p{
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 0.8em;
+  color: #525252;
+  margin: 5px;
+}
+
+.text-arquivo{
+  text-align: center;
+}
+
+footer{
+  margin: 150px 0px;
+  padding-bottom: 10px;
 }
